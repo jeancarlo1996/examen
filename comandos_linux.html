@@ -1,0 +1,35 @@
+COMANDOS DE LINUX
+
+cd /var /log <!--cambiamos al directorio-->
+
+sudo mkdir nuevos_logs <!--creamos un directorio llamado nuevos_logs-->
+
+pwd <!--mostramos la ruta-->
+
+
+COPIANDO EL DIRECTORIO /ETC
+
+sudo cp -r /etc /home/usuario/backup <!--COPIANDO-->
+
+
+COMANDOS DE BUSQUEDA Y FILTRADO
+
+find /var/log -type f -name "*.log" -exec grep -l "ERROR" {} + | less <!--MOSTRANDO ERRORES-->
+
+
+COMANDO DE GESTIOS Y PERMISOS CON OPCIONES 
+
+chmod -R u=rwX,g=rX,o= /home/usuario/scripts/* <!--CAMBIANDO LOS PERMISOS DE TODOS LOS ARCHIVOS-->
+
+
+COMANDOS DE ARCHIVO Y COMPRENSION
+
+tar -czpf /backup.targz -C /home/usuario/proyectos <!--creando un archivo comprimido-->
+
+
+
+
+
+
+
+
